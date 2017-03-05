@@ -51,12 +51,12 @@
   </div>  <!-- col -->
   
     <div class="col-md-4 hidden-xs">
+	<div class="well">
 	<h3>Tags</h3>
-		 <li><i class="fa fa-tags" aria-hidden="true"></i>
-		 {% assign tags_list = site.tags %}  
+		 <li><i class="fa fa-tags" aria-hidden="true"></i></li>
+		{% assign tags_list = site.tags %}  
 		{% include JB/tags_list %}
-		</li>
-		
+	</div>
 	</div>
 
 </div>
