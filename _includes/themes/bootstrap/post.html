@@ -13,16 +13,19 @@
     </div>
 
     {% unless page.categories == empty %}
-      <ul class="tag_box inline">
-        <li><i class="icon-folder-open"></i></li>
+    <br>
+    <h4>Categories</h4>
+      <ul class="nav nav-pills">
+	      <li><i class="icon-folder-open"></i></li>
         {% assign categories_list = page.categories %}
         {% include JB/categories_list %}
       </ul>
     {% endunless %}
 
     {% unless page.tags == empty %}
-      <ul class="tag_box inline">
-        <li><i class="icon-tags"></i></li>
+    <h4>Tags</h4>
+      <ul class="nav nav-pills">
+	      <li><i class="icon-tags"></i></li>
         {% assign tags_list = page.tags %}
         {% include JB/tags_list %}
       </ul>
