@@ -9,6 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link href="{{ ASSET_PATH }}/resources/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="{{ ASSET_PATH }}/resources/font-awesome/font-awesome.min.css" rel="stylesheet">
     <link href="{{ ASSET_PATH }}/css/style.css" rel="stylesheet">
     <link href="{{ ASSET_PATH }}/css/navbar-fixed-top.css" rel="stylesheet">
     
@@ -31,7 +32,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="{{ HOME_PATH }}" title="Home page"><span class="glyphicon glyphicon-home"></span> {{ site.title }}</a>
+          <a class="navbar-brand" href="{{ HOME_PATH }}" title="Home page"><i class="fa fa-home"></i> {{ site.title }}</a>
         </div>
 
         <div class="collapse navbar-collapse navbar-ex1-collapse">
@@ -50,7 +51,7 @@
         <p>
           &copy; {{ site.time | date: '%Y' }} {{ site.author.name }}
           <span class="pull-right text-muted">
-            <span class="glyphicon glyphicons-embed-close"></span> with <span class="glyphicon glyphicon-heart"></span> on Github
+            <i class="fa fa-code" aria-hidden="true"></i> with <i class="fa fa-heart" aria-hidden="true"></i> on Github
           </span>
         </p>
       </footer>
