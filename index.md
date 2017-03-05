@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: index
 title: Ali Rumane
 tagline: I use light weight heavy impact yools for my work
 ---
