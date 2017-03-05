@@ -8,31 +8,31 @@
       <span>{{ page.date | date_to_long_string }}</span>
     </div>
     <div class="content">
+      <div class="pull-right col-lg-4 col-sm-6">
+        <script async type="text/javascript" src="//cdn.carbonads.com/carbon.js?zoneid=1673&serve=C6AILKT&placement=jekyllbootstrap3tk" id="_carbonads_js"></script>
+      </div>
       {{ content }}
-	    <div class="clearfix"></div>
+      <div class="clearfix"></div>
     </div>
 
     {% unless page.categories == empty %}
-    <br>
-    <h4> <span class="glyphicon glyphicon-folder-open"></span> Categories</h4>
-      <ul class="nav nav-pills">
-        <!-- <li><i class="icon-folder-open"></i></li> -->
+      <ul class="tag_box inline">
+        <li><i class="icon-folder-open"></i></li>
         {% assign categories_list = page.categories %}
         {% include JB/categories_list %}
       </ul>
     {% endunless %}
 
     {% unless page.tags == empty %}
-    <h4> <span class="glyphicon glyphicon-tag"></span> Tags</h4>
-      <ul class="nav nav-pills">
-        <!-- <li><i class="icon-tags"></i></li> -->
+      <ul class="tag_box inline">
+        <li><i class="icon-tags"></i></li>
         {% assign tags_list = page.tags %}
         {% include JB/tags_list %}
       </ul>
     {% endunless %}
 
     <hr>
-
+    
     <ul class="pagination">
       {% if page.previous %}
         <li class="prev"><a href="{{ BASE_PATH }}{{ page.previous.url }}" title="{{ page.previous.title }}">&larr; Previous</a></li>
