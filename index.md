@@ -4,6 +4,8 @@ title: Ali Rumane
 tagline: I use light weight heavy impact yools for my work
 ---
 
+{% include JB/setup %}
+
 {% for post in site.posts %}
   <div class="panel panel-default">
     <div class="panel-heading">
@@ -14,3 +16,4 @@ tagline: I use light weight heavy impact yools for my work
     </div>
   </div>
 {% endfor %}
+
