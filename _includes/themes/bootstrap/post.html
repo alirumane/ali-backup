@@ -14,18 +14,18 @@
 
     {% unless page.categories == empty %}
     <br>
-    <h4>Categories</h4>
+    <h4> <span class="glyphicon glyphicon-folder-open"></span> Categories</h4>
       <ul class="nav nav-pills">
-	     <li><span class="glyphicon glyphicon-folder-open"></span></li>
+        <!-- <li><i class="icon-folder-open"></i></li> -->
         {% assign categories_list = page.categories %}
         {% include JB/categories_list %}
       </ul>
     {% endunless %}
 
     {% unless page.tags == empty %}
-    <h4>Tags</h4>
+    <h4> <span class="glyphicon glyphicon-tag"></span> Tags</h4>
       <ul class="nav nav-pills">
-	     <li><span class="glyphicon glyphicon-tag"></span></li>
+        <!-- <li><i class="icon-tags"></i></li> -->
         {% assign tags_list = page.tags %}
         {% include JB/tags_list %}
       </ul>
