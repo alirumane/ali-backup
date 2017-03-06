@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Installing NOOBS OS in Raspberry Pi
+title: Installing NOOBS OS on Raspberry Pi
 tags: [Raspberry Pi, NOOBS]
 ---
 >You bought a Raspberry Pi and want to run an OS on it
@@ -12,7 +12,7 @@ Raspberrypi.org suggests NOOBS OS installation. It has complete guide for instal
 **Essentials:**
 
 * Raspberry Pi
-* SD Card (16GB class 10 Preferred | 8GB Class 4 may also work)
+* SD Card (16GB class 10 Preferred / 8GB Class 4 may also work)
 * HDMI to VGA/HDMI cable (connecting to Display e.g. Monitor or T.V.)
 * Keyboard and Mouse
 * Power Supply (Micro USB e.g. phone charger)
@@ -28,11 +28,11 @@ Raspberrypi.org suggests NOOBS OS installation. It has complete guide for instal
 * Install Raspbian as Default OS.
 
 Run 
-```scalasudo
+```
 apt-get update
 ```
 and
-```scalasudo
+```
 sudo apt-get upgrade
 ```
 to run latest build.
