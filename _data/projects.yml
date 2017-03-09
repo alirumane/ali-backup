@@ -1,0 +1,13 @@
+projects:
+- name: SERIAL COMMUNICATION WINDOWS APPLICATION
+description: A Windows Application for serial communication which communicates with devices or controllers connected wired or wirelessly on PC
+technologies: C#/Visual Studio
+links:
+github: 
+site: 
+- name: Pong - Arduino Controlled Two Player Game
+description: Two dimensional sport game that simulates table tennis in which players controls an in-game paddle controlled by potentiometers
+technologies: Arduino/Processing
+links:
+github: 
+site: 
