@@ -1,34 +1,41 @@
 <div class="page-header">
-<h1>{{ page.title }} {% if page.tagline %}<br> <small>{{ page.tagline }}</small>{% endif %}</h1>
+	<h1>{{ page.title }} {% if page.tagline %}<br> <small>{{ page.tagline }}</small>{% endif %}</h1>
 </div>
+
 <div class="row">
+
 <!-- Column 1 -->
-<div class="col-md-8">
-<div class="blog-entries">
-{{ content }}
-</div>
-</div><!-- col -->
+	<div class="col-md-8">
+		<div class="blog-entries">
+			{{ content }}
+		</div>
+	</div><!-- col -->
+	
 <!-- Column 2 -->
-<div class="col-md-4">
-<div class="well">
-<h2>Quote</h2>
-<blockquote>
-<p>Success is going from failure to failure without losing enthusiasm</p>
-<p> By <cite title="Source Title">Winston Churchill</cite></p>
-</blockquote>
-</div> <!-- ./well -->
-<div class="well">
-<h3><span class="label label-info"><i class="fa fa-briefcase" aria-hidden="true"></i> Opportunity</span><br><&nbsp;<small>Embedded C & C++</small></h3>
-<div>
-At the moment I am looking for opportunity in Embedded Systems that involve the use of Embedded C, C++ and related technologies.
-</div>
-</div> <!-- /.well -->
-<div class="well" style="padding-top: 0">
-<h3>More about me</h3>
-<p>
-<a class="icon-link" href="https://github.com/alirumane" style="margin-right: 1em;"><i class="fa fa-github" aria-hidden="true"></i></a>
-<a class="icon-link" href="http://www.linkedin.com/in/alinmrumane" style="margin-right: 1em;"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
-</p>
-</div> <!-- /.well -->
-</div> <!-- /.col -->
+	<div class="col-md-4">
+	
+		<div class="well">
+			<h2>Byte Sized Bio</h2>
+				<blockquote>
+					<p>I am an Electronics Engineer developing open-source hacks, building robots & other projects.</p>
+				<a href="{{ site.base-url }}/about" title="About Page" alt="About Page">More About Ali</a>
+				</blockquote>
+		</div> <!-- ./well -->
+	
+		<div class="well">
+			<h3><span class="label label-info"><i class="fa fa-briefcase" aria-hidden="true"></i> Opportunity</span><br>&nbsp;<small>Embedded C & C++</small></h3>
+			<div>
+				At the moment I am looking for opportunity in Embedded Systems that involve the use of Embedded C, C++ and related technologies.
+			</div>
+		</div> <!-- /.well -->
+	
+		<div class="well" style="padding-top: 0">
+			<h3>More about me</h3>
+			<p>
+				<a class="icon-link" href="https://github.com/alirumane" style="margin-right: 1em;"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a>
+				<a class="icon-link" href="http://www.linkedin.com/in/alinmrumane" style="margin-right: 1em;"><i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i></a>
+			</p>
+		</div> <!-- /.well -->
+	
+	</div> <!-- /.col -->
 </div> <!-- /.row -->
