@@ -1,6 +1,6 @@
 ---
 layout: index
-title: Ali Rumane
+title: Home Page
 tagline: I use light weight heavy impact tools for my work
 ---
 {% include JB/setup %}
