@@ -2,8 +2,8 @@
 
 This repo is the GitHub Pages site hosted via Github Pages and Jekyll.
 
-Visit [https://alirumane.github.io](https://alirumane.github.io) to preview.
+[![Live Demo](https://img.shields.io/badge/view-live--demo-blue.svg?style=flat-square)](https://alirumane.github.io/)
 
 ## License
 
-[MIT](http://opensource.org/licenses/MIT)
+[![npm](https://img.shields.io/npm/l/express.svg)](https://github.com/alirumane/alirumane.github.io/blob/master/LICENSE)
