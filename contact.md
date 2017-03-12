@@ -8,9 +8,9 @@ description: Contact
 
 ### Contact me now
 
-Please feel free to reach out to me if you have any questions or comments about the things I do. Also, you can always just send me a friendly Hello!
+Please feel free to reach out to me if you have any questions or suggestions, I will try to get you back.
 
-
+Also you can just send me a friendly Hello!
 
 ### CONTACT INFORMATION
 
@@ -18,8 +18,10 @@ Please feel free to reach out to me if you have any questions or comments about 
 
 ATTN: Ali Rumane
 
-alirumane.github.io
+mail : alirumane [at] yahoo [dot] com
 
-[www.linkedin.com/in/alinmrumane](www.linkedin.com/in/alinmrumane)
+[alirumane.github.io](https://alirumane.github.io/)
 
-[https://github.com/alirumane](https://github.com/alirumane)
+[linkedin.com/in/alinmrumane](www.linkedin.com/in/alinmrumane)
+
+[github.com/alirumane](https://github.com/alirumane)
