@@ -10,7 +10,9 @@ description: Contact
 
 Please feel free to reach out to me if you have any questions or comments about the things I do. Also, you can always just send me a friendly Hello!
 
-### Contact Information
+
+### CONTACT INFORMATION
+
 
 ATTN: Ali Rumane
 
