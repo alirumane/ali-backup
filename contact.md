@@ -8,13 +8,11 @@ description: Contact
 
 ### Contact me now
 
-Please feel free to reach out to me if you have any questions or suggestions, I will try to get you back.
+Please feel free to reach out to me if you have any questions or suggestions. Also you can just send me a friendly Hello!
 
-Also you can just send me a friendly Hello!
+I apologize in advance if I take a really long time to respond, usually I don't take too long.
 
 ### CONTACT INFORMATION
-
-
 
 ATTN: Ali Rumane
 
