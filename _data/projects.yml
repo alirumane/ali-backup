@@ -13,3 +13,24 @@ projects:
   links:
     github: 
     site: 
+  
+- name: BRICK-BREAKER - SINGLE PLAYER GAME
+  description: A game in which player must break wall of bricks by deflecting a ball with paddle controlled by potentiometer connected on Arduino communicating serially with PC
+  technologies: Arduino/Processing
+  links:
+    github: 
+    site: 
+      
+- name: AXIS FINDING, POSITIONING & CONTROLLING ROBOT
+  description: Robot that measures the surrounding area, makes the axis according to is initial position specified and responds to surrounding objects
+  technologies: 8051/Kiel
+  links:
+    github: 
+    site: 
+          
+- name: Data Encryption using Color Codes
+  description: Represent the data in colors that only the sender knows and decrypt at receiver using common key shared by the sender and receiver
+  technologies: Scilab
+  links:
+    github: 
+    site: 
