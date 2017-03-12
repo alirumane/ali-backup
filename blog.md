@@ -4,6 +4,7 @@ title: Blog
 header: Blog
 group: navigation
 ---
+
 {% include JB/setup %}
 
 {% for post in site.posts %}
