@@ -1,7 +1,7 @@
 projects:
 
 - name: SERIAL COMMUNICATION WINDOWS APPLICATION
-  description: A Windows Application for serial communication which communicates with devices or controllers connected wired or wirelessly on PC
+  description: A Windows Application for serial communication which communicates with devices or controllers connected wired or wirelessly on PC.
   technologies: C#/Visual Studio
   links:
     github: 
