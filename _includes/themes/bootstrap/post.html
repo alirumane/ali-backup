@@ -48,7 +48,7 @@
     {% include JB/comments %}
   </div>  <!-- col -->
   
-    <div class="col-md-4 visible-lg">
+    <div class="col-md-4 visible-lg visible-md">
 	<div class="well">
 	<h3> <i class="fa fa-tags" aria-hidden="true"></i> Tags</h3>
 		 <ul>
@@ -56,6 +56,26 @@
 		{% include JB/tags_list %}
 		</ul>
 	</div>
+	
+	<div class="well">
+	<h3> <i class="fa fa-folder-open" aria-hidden="true"></i> Categories</h3>
+		 <ul>
+		 {% assign categories_list = site.categories %}
+		{% include JB/categories_list %}
+		</ul>
+	</div>
+	
+	<div class="well">
+	<h3> <i class="fa fa-clock-o" aria-hidden="true"></i> Recent Posts</h3>
+		 <ul>
+		{% for post in site.posts limit:4 %}
+		<li>
+		<a href="{{post.url}}">{{post.title}}</a>
+		</li>
+		{% endfor %}
+		</ul>
+	</div>
+	
 	</div>
 
 </div>
