@@ -6,6 +6,11 @@ group: navigation
 ---
 {% include JB/setup %}
 
+ <div class="container">
+	<div class="row">
+         <div class="col-md-offset-1 col-md-8">
+          <div class="well">
+
 {% for project in site.data.projects.projects %}
   <div class="row">
     <div class="col-md-4">
@@ -30,3 +35,8 @@ group: navigation
     <hr/>
   {% endif %}
 {% endfor %}
+
+		</div>
+		</div>
+	</div>
+</div>
