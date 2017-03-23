@@ -14,7 +14,7 @@ tags: [Raspberry Pi, lighttpd, server]
 #### 1. Installing lighttpd
 
 
-```*.sh
+```bash
 sudo apt-get -y install lighttpd
 ```
 
@@ -48,7 +48,7 @@ You need to change the default location of html in web-directory.  Type the foll
 
 you will see
 
-```apache2.conf
+```apacheconf
 server.document-root        = "/var/www/html"
 server.upload-dirs          = ( "/var/cache/lighttpd/uploads" )
 server.errorlog             = "/var/log/lighttpd/error.log"
