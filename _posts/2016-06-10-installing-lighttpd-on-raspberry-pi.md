@@ -14,7 +14,7 @@ tags: [Raspberry Pi, lighttpd, server]
 #### 1. Installing lighttpd
 
 
-```
+```*.sh
 sudo apt-get -y install lighttpd
 ```
 
