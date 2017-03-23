@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Installing LIGHT
+title: Installing LIGHTTPD on Raspberry Pi
 tags: [Raspberry Pi, lighttpd, server]
 ---
 >You want to run a webserver on Raspberry Pi
@@ -48,7 +48,7 @@ You need to change the default location of html in web-directory.  Type the foll
 
 you will see
 
-```
+```apache2.conf
 server.document-root        = "/var/www/html"
 server.upload-dirs          = ( "/var/cache/lighttpd/uploads" )
 server.errorlog             = "/var/log/lighttpd/error.log"
