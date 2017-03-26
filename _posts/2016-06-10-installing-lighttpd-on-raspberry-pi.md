@@ -33,7 +33,7 @@ Also the requests per second for Lighttpd is suitable for  applications running 
 To install the lighttpd web server type the following commands in terminal
 
 
-```
+```shell
 sudo apt-get install lighttpd
 ```
 
