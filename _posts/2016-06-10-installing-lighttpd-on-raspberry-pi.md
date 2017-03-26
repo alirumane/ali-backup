@@ -12,12 +12,13 @@ tags: [Raspberry Pi, lighttpd, server]
 
 #### Memory Usage
 
+
  ![Webserver Memory Usage Graph](images/Webserver_memory_graph.png "Webserver Memory Usage Graph")
 
  From the above image it is clearly seen that Lighttpd uses less memory compared to others which is quite good for Raspberry Pi.
 
 
- #### Memory Usage
+ #### Connection Request
 
 
  ![Webserver Request Graph](images/Webserver_requests_graph.png "Webserver Request Graph")
