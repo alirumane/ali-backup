@@ -13,7 +13,7 @@ tags: [Raspberry Pi, lighttpd, server]
 #### Memory Usage
 
 
- ![Webserver Memory Usage Graph](images/Webserver_memory_graph.png "Webserver Memory Usage Graph")
+ ![Webserver Memory Usage Graph]({{site.url}}/images/Webserver_memory_graph.png "Webserver Memory Usage Graph")
 
  From the above image it is clearly seen that Lighttpd uses less memory compared to others which is quite good for Raspberry Pi.
 
@@ -21,7 +21,7 @@ tags: [Raspberry Pi, lighttpd, server]
 #### Connection Request
 
 
- ![Webserver Request Graph](images/Webserver_requests_graph.png "Webserver Request Graph")
+ ![Webserver Request Graph]({{site.url}}/images/Webserver_requests_graph.png "Webserver Request Graph")
 
 Also the requests per second for Lighttpd is suitable for  applications running on Raspberry Pi.
 
@@ -33,9 +33,9 @@ Also the requests per second for Lighttpd is suitable for  applications running 
 To install the lighttpd web server type the following commands in terminal
 
 
-```bash
+{% highlight bash %}
 sudo apt-get install lighttpd
-```
+{% highlight bash %}
 
 
 #### 2. Enabling CGI
