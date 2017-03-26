@@ -67,6 +67,7 @@ You need to change the default location of html in web-directory.  Type the foll
 
 you will see
 
+
 ```apacheconf
 server.document-root        = "/var/www/html"
 server.upload-dirs          = ( "/var/cache/lighttpd/uploads" )
