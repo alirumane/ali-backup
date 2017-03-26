@@ -41,7 +41,7 @@ sudo apt-get install lighttpd
 #### 2. Enabling CGI
 
 
-```{r, engine='bash'}
+```sh
 sudo lighttpd-enable-mod cgi
 ```
 
