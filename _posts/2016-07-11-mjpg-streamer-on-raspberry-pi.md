@@ -16,8 +16,8 @@ Requirements:
 
 ## B. Connect the Camera Module
 
-{:.center-block}
-![Raspberry Pi Camera Port]({{site.url}}/images/raspb-camera-connection.png "Raspberry Pi Camera Port")
+
+![Raspberry Pi Camera Port]({{site.url}}/images/raspb-camera-connection.png "Raspberry Pi Camera Port"){: .center-image }*(°0°)*
 
 - Locate the camera port and connect the camera as shown.
 - Open the `Raspberry Pi Configuration` Tool from `Preferences` on the main menu
