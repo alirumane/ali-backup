@@ -68,9 +68,10 @@
 .center-image
 {
     /*width: 100%;*/
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
-    width: fit-content;
+    width: -webkit-min-content;
+    width: -moz-min-content;
+    width: min-content;
+    max-width:80%
     margin: 0 auto;
     display: block;
 }
