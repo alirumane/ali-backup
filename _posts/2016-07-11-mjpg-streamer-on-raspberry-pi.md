@@ -32,7 +32,7 @@ Requirements:
 Install dev version of libjpeg:
 
 
-```shell
+```
 sudo apt-get install libjpeg62-turbo-dev
 ```
 
