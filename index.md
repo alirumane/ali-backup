@@ -1,6 +1,6 @@
 ---
 layout: index
-title: Ali Rumane
+title: HomePage
 tagline: HomePage
 ---
 {% include JB/setup %}
