@@ -2,6 +2,7 @@
 layout: post
 title: Turn the wheel, write blog
 tags: [blog]
+excerpt: Just started blog
 ---
 Recently I saw use and importance Git and came across GitHub, then found this wonderful thing called GitHub Page.
 
