@@ -6,12 +6,12 @@ description: About
 ---
 {% include JB/setup %}
 
-#### ME
+#### Me
 
 My name is Ali N. M. Rumane, I am an undergraduate student at Mumbai University - `Electronics` and Telecommunication Engineering.
 My scope of interest includes `Embedded Systems` and related technologies, Linux, `Software` & `Hardware` development.
 
-#### technology
+#### Technology
 
 + Embedded C
 + C
@@ -22,6 +22,6 @@ My scope of interest includes `Embedded Systems` and related technologies, Linux
 + HTML/CSS
 + Linux
 
-#### blog
+#### Blog
 
 Site architecture: Jekyll + Markdown + Ruby + Github Pages
