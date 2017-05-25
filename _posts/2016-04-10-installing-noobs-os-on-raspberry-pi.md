@@ -2,6 +2,7 @@
 layout: post
 title: Installing NOOBS OS on Raspberry Pi
 tags: [Raspberry Pi, NOOBS]
+excerpt: You bought a Raspberry Pi and want to run an OS on it
 ---
 >You bought a Raspberry Pi and want to run an OS on it
 
