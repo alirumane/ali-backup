@@ -76,8 +76,6 @@ ul.social-buttons {
 }
 ul.social-buttons li a {
   display: block;
-  font-size: 20px;
-  line-height: 40px;
   outline: none;
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
