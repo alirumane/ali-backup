@@ -11,7 +11,7 @@ $(document).ready(function(){
             $('#back-to-top').tooltip('hide');
             $('body,html').animate({
                 scrollTop: 0
-            }, 1000);
+            }, 800);
             return false;
         });
         
