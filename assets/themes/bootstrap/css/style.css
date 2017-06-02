@@ -75,7 +75,6 @@ ul.social-buttons {
   margin-bottom: 0;
 }
 ul.social-buttons li a {
-  display: block;
   outline: none;
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
