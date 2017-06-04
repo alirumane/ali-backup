@@ -2,6 +2,7 @@
 layout: post
 title: Installing MJPEG Streamer on Raspberry Pi
 tags: [Raspberry Pi, MJPEG Streamer, Video]
+category: Raspberry Pi Tutorials
 excerpt: You want to stream video through Raspberry Pi
 ---
 >You want to stream video through Raspberry Pi
