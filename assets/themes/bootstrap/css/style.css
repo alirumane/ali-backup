@@ -64,28 +64,6 @@
   border: 1px solid #4c964d;
   color: #FFF; }
 
-footer span.copyright {
-  line-height: 40px;
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  text-transform: uppercase;
-  text-transform: none;
-}
-
-ul.social-buttons {
-  margin-bottom: 0;
-}
-ul.social-buttons li a {
-  outline: none;
-  -webkit-transition: all 0.3s;
-  -moz-transition: all 0.3s;
-  transition: all 0.3s;
-}
-ul.social-buttons li a:hover,
-ul.social-buttons li a:focus,
-ul.social-buttons li a:active {
-  background-color: #5cb85c;
-}
-
 /* Image-Center */
 .center-image
 {
@@ -99,10 +77,14 @@ ul.social-buttons li a:active {
 
 /* Back-to-Top */
 .back-to-top {
-    cursor: pointer;
     position: fixed;
+    width: 30px;
+    height: 30px;
     bottom: 20px;
     right: 20px;
-    display:none;
-    background-color: transparent;
+    text-align: center;
+    padding: 6px 0;
+    font-size: 12px;
+    line-height: 1.428571429;
+    border-radius: 15px;
 }
