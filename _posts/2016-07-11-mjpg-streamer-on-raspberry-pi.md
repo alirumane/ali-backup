@@ -10,28 +10,28 @@ excerpt: You want to stream video through Raspberry Pi
 
 ## A. Essentials
 
-Requirements:
+  Requirements:
 
-- Raspberry Pi
-- Raspberry Pi Camera Module
+    - Raspberry Pi
+    - Raspberry Pi Camera Module
 
 
 ## B. Connect the Camera Module
 
 
 ![Raspberry Pi Camera Port]({{site.url}}/images/raspb-camera-connection.png "Raspberry Pi Camera Port"){: .center-image }*Camera connection from both sides*
-- Locate the camera port and connect the camera as shown.
-- Open the `Raspberry Pi Configuration` Tool from `Preferences` on the main menu
+  - Locate the camera port and connect the camera as shown.
+  - Open the `Raspberry Pi Configuration` Tool from `Preferences` on the main menu
 
 ![Raspberry Pi Camera Enable]({{site.url}}/images/raspi-camera-config.png "Raspberry Pi Camera Enable"){: .center-image }
 
-- Enable the `Camera` from `Interfaces` tab if Disabled and Reboot the Pi.
+  - Enable the `Camera` from `Interfaces` tab if Disabled and Reboot the Pi.
 
 
 ## C. Installing MJPG Streamer
 
 
-Install dev version of libjpeg:
+  Install dev version of libjpeg:
 
 
 ```
@@ -39,14 +39,14 @@ sudo apt-get install libjpeg62-turbo-dev
 ```
 
 
-Install make:
+  Install make:
 
 ```
  sudo apt-get install cmake
 ```
 
 
-Download mjpg-streamer with raspicam plugin:
+  Download mjpg-streamer with raspicam plugin:
 
 
 ```
@@ -54,7 +54,7 @@ git clone https://github.com/jacksonliam/mjpg-streamer.git ~/mjpg-streamer
 ```
 
 
-Change directory:
+  Change directory:
 
 
 ```
@@ -62,14 +62,14 @@ Change directory:
  ```
 
 
- Compile:
+  Compile:
 
 
  ```
  make clean all
  ```
 
- Replace old jpg-streamer:
+  Replace old jpg-streamer:
 
 
  ```
@@ -84,7 +84,7 @@ sudo rm -rf ~/mjpg-streamer
 ## D. Start Streaming
 
 
-To Begin streaming type:
+  To Begin streaming type:
 
 
 ```
@@ -92,7 +92,7 @@ To Begin streaming type:
 ```
 
 
-You will see something like this
+  You will see something like this
 
 ```
 MJPG Streamer Version.: 2.0
@@ -127,15 +127,15 @@ Starting Camera
 
 Encoder Buffer Size 81920
 ```
-Now type the following url in your browser
+  Now type the following url in your browser
 
-To find IP address type
+  To find IP address type
 
 ```
 sudo ifconfig
 ```
 
-It will be something like this `192.168.43.100`
+  It will be something like this `192.168.43.100`
 ```
 IpAddress:9000/stream.html
 ```
@@ -143,7 +143,7 @@ IpAddress:9000/stream.html
 ## E. Stop Streaming
 
 
-To stop streaming type:
+  To stop streaming type:
 
 
 ```
