@@ -79,11 +79,9 @@
 .back-to-top {
     cursor: pointer;
     position: fixed;
+    display:none;
     bottom: 20px;
     right: 20px;
     text-align: center;
     padding: 6px 0;
-    font-size: 12px;
-    line-height: 1.428571429;
-    border-radius: 15px;
 }
