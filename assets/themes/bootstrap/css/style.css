@@ -78,8 +78,6 @@
 /* Back-to-Top */
 .back-to-top {
     position: fixed;
-    width: 30px;
-    height: 30px;
     bottom: 20px;
     right: 20px;
     text-align: center;
