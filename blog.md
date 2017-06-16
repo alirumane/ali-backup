@@ -5,6 +5,7 @@ header: Blog
 group: navigation
 ---
 {% include JB/setup %}
+{% include JB/tags_list %}
 
 {% for post in site.posts %}
 <div class="panel">
@@ -20,7 +21,7 @@ group: navigation
 					<div class="col-xs-9">
 						<p>{{ post.excerpt }}</p>
 						<a class="btn btn-default" href="{{ post.url }}">See full post</a>
-						<p class="pull-right"><span class="label label-default">{% assign tags_list = page.tags %} {% include JB/tags_list %}</span></p>
+						<p class="pull-right"><span class="label label-default">{% assign tags_list = page.tags %}</span></p>
 						<ul class="list-inline"><li><a href="{{ post.url }}">{{ post.date | date_to_string }}</a></li><li><a href="#"><i class="glyphicon glyphicon-share"></i><!-- 12 --></a></li></ul>	
 					</div>
                 <div class="col-xs-3"></div>
