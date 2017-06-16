@@ -15,7 +15,7 @@ group: navigation
               <a class="story-img" href="{{ post.url }}"><img src="{{ post.thumbnail }}" style="width:100px;height:100px" class="img-thumbnail"></a>
             </div>
 			<div class="col-md-10 col-sm-9">
-              <h3 href="{{ post.url }}">{{ post.title }}</h3>
+              <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
 				<div class="row">
 					<div class="col-xs-9">
 						<p>{{ post.excerpt }}</p>
