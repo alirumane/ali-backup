@@ -21,7 +21,7 @@ group: navigation
 						<p>{{ post.excerpt }}</p>
 						<a class="btn btn-default" href="{{ post.url }}">See full post</a>
 						<p class="pull-right"><span class="label label-default">{% assign tags_list = page.tags %}</span></p>
-						<ul class="list-inline"><li><a href="{{ post.url }}">{{ post.date | date_to_string }}</a></li><li><a href="#"><i class="glyphicon glyphicon-share"></i><!-- 12 --></a></li></ul>	
+						<ul class="list-inline"><li>{{ post.date | date_to_string }}</li><li><a href="#"><i class="glyphicon glyphicon-share"></i><!-- 12 --></a></li></ul>	
 					</div>
                 <div class="col-xs-3"></div>
               </div>
