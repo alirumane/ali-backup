@@ -3,6 +3,7 @@
 	right: 10px;
 	top: 15px;
 	fill: #DDD;
+	  padding-top: 35px;
 }
 .super-search-btn:hover {
 	fill: #BBB;
@@ -38,6 +39,7 @@
 	text-align: center;
 	transform: translateY(-100%);
 	transition: 0.15s ease-out 150ms;
+	padding-top: 35px;
 }
 .is-active .super-search__input {
 	transform: translateY(0);
