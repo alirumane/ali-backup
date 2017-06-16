@@ -5,7 +5,6 @@ header: Blog
 group: navigation
 ---
 {% include JB/setup %}
-{% include JB/tags_list %}
 
 {% for post in site.posts %}
 <div class="panel">
@@ -32,3 +31,5 @@ group: navigation
 	</div>
 </div>
 {% endfor %}
+
+{% include JB/tags_list %}
