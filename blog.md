@@ -12,7 +12,7 @@ group: navigation
 		<div class="row"> 
 		<br>
 			<div class="col-md-2 col-sm-3 text-center">
-              <a class="story-img" href="{{ post.url }}"><img src="{{ post.thumbnail }}" style="width:100px;height:100px" class="img-circle"></a>
+              <a class="story-img" href="{{ post.url }}"><img src="{{ post.thumbnail }}" style="width:100px;height:100px" class="img-thumbnail"></a>
             </div>
 			<div class="col-md-10 col-sm-9">
               <h3 href="{{ post.url }}">{{ post.title }}</h3>
