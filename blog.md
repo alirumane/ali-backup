@@ -20,7 +20,7 @@ group: navigation
 					<div class="col-xs-9">
 						<p>{{ post.excerpt }}</p>
 						<a class="btn btn-default" href="{{ post.url }}">See full post</a>
-						<a class="pull-right"> <div> <ul>{% assign tags_list = post.tags %} {% include JB/tags_list %}</ul></div></a>
+						<a class="pull-right"> <div> <ul class="list-inline">{% assign tags_list = post.tags %} {% include JB/tags_list %}</ul></div></a>
 						<ul class="list-inline"><li>{{ post.date | date_to_string }}</li><li><a href="#"><i class="glyphicon glyphicon-share"></i><!-- 12 --></a></li></ul>	
 					</div>
                 <div class="col-xs-3"></div>
