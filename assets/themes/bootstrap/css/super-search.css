@@ -1,7 +1,6 @@
 .super-search-btn {
 	cursor: pointer;
 	position: fixed;
-	display:none;
 	right: 10px;
 	top: 50px;
 	fill: #DDD;
