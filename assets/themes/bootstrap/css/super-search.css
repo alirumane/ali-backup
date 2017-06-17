@@ -1,9 +1,8 @@
 .super-search-btn {
 	position: fixed;
 	right: 10px;
-	/*top: 15px;*/
+	top: 45px;
 	fill: #DDD;
-	  padding-top: 45px;
 }
 .super-search-btn:hover {
 	fill: #BBB;
