@@ -1,5 +1,6 @@
 .super-search-btn {
 	position: fixed;
+	display:none;
 	right: 10px;
 	top: 50px;
 	fill: #DDD;
@@ -25,7 +26,7 @@
 	fill: #DDD;
 	position: absolute;
 	right: 10px;
-	top: 50px;
+	top: 55px;
 	z-index: 1;
 }
 .super-search__input {
