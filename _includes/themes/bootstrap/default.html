@@ -60,9 +60,15 @@
     <div class="container">
       {{ content }}
       <hr>
+	  	<form action="/search.html" method="get">
+		<label for="search_box">Search</label>
+		<input type="text" id="search_box" name="query">
+		<input type="submit" value="search">
+	</form>
+	<hr>
     </div>
 
-	  {% include footer.html %}
+	{% include footer.html %}
 	
 	<a id="back-to-top" href="#" class="btn btn-success back-to-top" role="button" title="Return to the top" data-toggle="tooltip" data-placement="left"><span class="glyphicon glyphicon-chevron-up"></span></a>
 
