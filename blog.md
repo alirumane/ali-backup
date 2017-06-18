@@ -39,7 +39,6 @@ group: navigation
 
 {% include JB/tags_list %}
 
-<script src="https://unpkg.com/simple-jekyll-search@1.1.6/dest/jekyll-search.min.js"></script>
 <script>
 SimpleJekyllSearch({
   search-input: document.querySelector('.search-input'),
