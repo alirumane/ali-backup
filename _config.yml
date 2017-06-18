@@ -135,3 +135,4 @@ JB :
   
 gems:
     - jekyll-sitemap
+    - jekyll-lunr-js-search
