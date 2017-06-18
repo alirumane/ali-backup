@@ -6,6 +6,11 @@ group: navigation
 ---
 {% include JB/setup %}
 
+<div>
+    <input type="text" class="search-input" placeholder="Type / to search">
+    <div class="results-container"></div>
+</div>
+
 {% for post in site.posts %}
 <div class="panel">
     <div class="panel-body">
