@@ -1,6 +1,6 @@
 ---
 layout: index
-<!-- title: HomePage -->
+title: Home
 tagline: HomePage
 ---
 {% include JB/setup %}
