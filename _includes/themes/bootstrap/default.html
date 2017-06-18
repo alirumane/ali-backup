@@ -68,6 +68,10 @@
 	</form>
 	<hr>
     </div>
+	
+	<input type="text" id="search-input" placeholder="search posts..">
+	br/>
+	<div id="results-container"></div>
 
 	{% include footer.html %}
 	
@@ -83,6 +87,15 @@
     <script>superSearch({
  	searchFile: '//alirumane.github.io/rss'
       });</script>
+	
+	<script src="https://unpkg.com/simple-jekyll-search@1.1.6/dest/jekyll-search.min.js"></script>
+	<script>
+	SimpleJekyllSearch({
+	search-input: document.querySelector('.search-input'),
+	resultsContainer: document.getElementById('results-container'),
+	json: '/search.json',
+	searchResultTemplate: '<li><a href="{{ site.url }}{url}">{title}</a></li>'})
+	</script>
 	  
   </body>
 </html>
