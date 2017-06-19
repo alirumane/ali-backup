@@ -1,7 +1,7 @@
 ---
 layout: search
 title: Search
-permalink: /search/
+header: Blog
 ---
 {% include JB/setup %}
 
