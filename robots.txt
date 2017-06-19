@@ -1,4 +1,4 @@
-Sitemap: https://alirumane.github.io/sitemap.txt
+Sitemap: https://alirumane.github.io/sitemap.xml
 
 User-agent: *
 Disallow: /
