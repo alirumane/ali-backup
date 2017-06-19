@@ -1,182 +1,90 @@
-var tipuesearch = {"pages": 
-                  [
-  
-    {
-      "title"    : "Installing MJPEG Streamer on Raspberry Pi",
-      "category" : "Raspberry Pi Tutorials",
-      "tags"     : "Raspberry Pi, MJPEG Streamer, Video",
-      "url"      : "/raspberry%20pi%20tutorials/2016/07/11/mjpg-streamer-on-raspberry-pi",
-      "date"     : "2016-07-11 00:00:00 +0000"
-    } ,
-  
-    {
-      "title"    : "Installing LIGHTTPD web server on Raspberry Pi",
-      "category" : "Raspberry Pi Tutorials",
-      "tags"     : "Raspberry Pi, lighttpd, server",
-      "url"      : "/raspberry%20pi%20tutorials/2016/06/10/installing-lighttpd-on-raspberry-pi",
-      "date"     : "2016-06-10 00:00:00 +0000"
-    } ,
-  
-    {
-      "title"    : "Installing NOOBS OS on Raspberry Pi",
-      "category" : "Raspberry Pi Tutorials",
-      "tags"     : "Raspberry Pi, NOOBS",
-      "url"      : "/raspberry%20pi%20tutorials/2016/04/10/installing-noobs-os-on-raspberry-pi",
-      "date"     : "2016-04-10 00:00:00 +0000"
-    } ,
-  
-    {
-      "title"    : "Turn the wheel, write blog",
-      "category" : "",
-      "tags"     : "blog",
-      "url"      : "/2015/04/10/start-blog",
-      "date"     : "2015-04-10 00:00:00 +0000"
-    } 
-  
-  
-    ,{
-      "title"    : "About",
-      "category" : "",
-      "tags"     : "",
-      "url"      : "/about",
-      "date"     : ""
-    }
-  
-    ,{
-      "title"    : "Archive",
-      "category" : "",
-      "tags"     : "",
-      "url"      : "/archive",
-      "date"     : ""
-    }
-  
-    ,{
-      "title"    : "Atom Feed",
-      "category" : "",
-      "tags"     : "",
-      "url"      : "/atom.xml",
-      "date"     : ""
-    }
-  
-    ,{
-      "title"    : "Blog",
-      "category" : "",
-      "tags"     : "",
-      "url"      : "/blog",
-      "date"     : ""
-    }
-  
-    ,{
-      "title"    : "Categories",
-      "category" : "",
-      "tags"     : "",
-      "url"      : "/categories",
-      "date"     : ""
-    }
-  
-    ,{
-      "title"    : "Contact",
-      "category" : "",
-      "tags"     : "",
-      "url"      : "/contact",
-      "date"     : ""
-    }
-  
-    ,{
-      "title"    : "",
-      "category" : "",
-      "tags"     : "",
-      "url"      : "/feed.xml",
-      "date"     : ""
-    }
-  
-    ,{
-      "title"    : "Home",
-      "category" : "",
-      "tags"     : "",
-      "url"      : "/",
-      "date"     : ""
-    }
-  
-    ,{
-      "title"    : "Pages",
-      "category" : "",
-      "tags"     : "",
-      "url"      : "/pages",
-      "date"     : ""
-    }
-  
-    ,{
-      "title"    : "Projects",
-      "category" : "",
-      "tags"     : "",
-      "url"      : "/projects",
-      "date"     : ""
-    }
-  
-    ,{
-      "title"    : "Resume",
-      "category" : "",
-      "tags"     : "",
-      "url"      : "/resume",
-      "date"     : ""
-    }
-  
-    ,{
-      "title"    : "RSS Feed",
-      "category" : "",
-      "tags"     : "",
-      "url"      : "/rss.xml",
-      "date"     : ""
-    }
-  
-    ,{
-      "title"    : "",
-      "category" : "",
-      "tags"     : "",
-      "url"      : "/search.json",
-      "date"     : ""
-    }
-  
-    ,{
-      "title"    : "Search",
-      "category" : "",
-      "tags"     : "",
-      "url"      : "/search",
-      "date"     : ""
-    }
-  
-    ,{
-      "title"    : "",
-      "category" : "",
-      "tags"     : "",
-      "url"      : "/sitemap.xml",
-      "date"     : ""
-    }
-  
-    ,{
-      "title"    : "Tags",
-      "category" : "",
-      "tags"     : "",
-      "url"      : "/tags",
-      "date"     : ""
-    }
-  
-    ,{
-      "title"    : "",
-      "category" : "",
-      "tags"     : "",
-      "url"      : "/assets/css/style.css",
-      "date"     : ""
-    }
-  
-    ,{
-      "title"    : "HEAD",
-      "category" : "",
-      "tags"     : "",
-      "url"      : "/History",
-      "date"     : ""
-    }
-  
-]
-                  };
+---
+# Content index for Tipue Search
+# https://github.com/jekylltools/jekyll-tipue-search
+# v1.0
+---
+{% assign index = "" | split: "" %}
+{% assign excluded_files = site.tipue_search.exclude.files %}
+{% assign excluded_taxonomies = "" | split: "" %}
+{% for tag in site.tipue_search.exclude.tags %}
+  {% assign excluded_taxonomies = excluded_taxonomies | push: tag | uniq %}
+{% endfor %}
+{% for category in site.tipue_search.exclude.categories %}
+  {% assign excluded_taxonomies = excluded_taxonomies | push: category | uniq %}
+{% endfor %}
+{% for post in site.posts %}
+  {% unless post.exclude_from_search == true or excluded_files contains post.path %}
+    {% assign has_excluded_taxonomy = false %}
+    {% for tag in post.tags %}
+      {% if excluded_taxonomies contains tag %}
+        {% assign has_excluded_taxonomy = true %}
+      {% endif %}
+    {% endfor %}
+    {% for category in post.categories %}
+      {% if excluded_taxonomies contains category %}
+        {% assign has_excluded_taxonomy = true %}
+      {% endif %}
+    {% endfor %}
+    {% unless has_excluded_taxonomy == true %}
+      {% assign index = index | push: post | uniq %}
+    {% endunless %}
+  {% endunless %}
+{% endfor %}
+{% if site.tipue_search.include.pages == true %}
+  {% for page in site.html_pages %}
+    {% unless page.exclude_from_search == true or excluded_files contains page.path %}
+      {% assign has_excluded_taxonomy = false %}
+      {% for tag in page.tags %}
+        {% if excluded_taxonomies contains tag %}
+          {% assign has_excluded_taxonomy = true %}
+        {% endif %}
+      {% endfor %}
+      {% for category in page.categories %}
+        {% if excluded_taxonomies contains category %}
+          {% assign has_excluded_taxonomy = true %}
+        {% endif %}
+      {% endfor %}
+      {% unless has_excluded_taxonomy == true %}
+        {% assign index = index | push: page | uniq %}
+      {% endunless %}
+    {% endunless %}
+  {% endfor %}
+{% endif %}
+{% for collection in site.tipue_search.include.collections %}
+  {% assign documents = site.documents | where:"collection",collection %}
+  {% for document in documents %}
+    {% unless document.exclude_from_search == true or excluded_files contains document.path %}
+      {% assign has_excluded_taxonomy = false %}
+      {% for tag in document.tags %}
+        {% if excluded_taxonomies contains tag %}
+          {% assign has_excluded_taxonomy = true %}
+        {% endif %}
+      {% endfor %}
+      {% for category in document.categories %}
+        {% if excluded_taxonomies contains category %}
+          {% assign has_excluded_taxonomy = true %}
+        {% endif %}
+      {% endfor %}
+      {% unless has_excluded_taxonomy == true %}
+        {% assign index = index | push: document | uniq %}
+      {% endunless %}
+    {% endunless %}
+  {% endfor %}
+{% endfor %}
+var tipuesearch = {"pages": [
+{% for document in index %}
+  {% assign taxonomies = "" | split: "" %}
+  {% for tag in document.tags %}
+    {% assign taxonomies = taxonomies | push: tag | uniq %}
+  {% endfor %}
+  {% for category in document.categories %}
+    {% assign taxonomies = taxonomies | push: category | uniq %}
+  {% endfor %}
+  {
+    "title": {{ document.title | smartify | strip_html | normalize_whitespace | jsonify }},
+    "text": {{ document.content | strip_html | normalize_whitespace | jsonify }},
+    "tags": {{ taxonomies | join: " " | normalize_whitespace | jsonify }},
+    "url": {{ document.url | relative_url | jsonify }}
+  }{% unless forloop.last %},{% endunless %}
+{% endfor %}
+]};
