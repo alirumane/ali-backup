@@ -8,7 +8,7 @@ http://www.tipue.com/search
 
 // List of pages for Live mode
 
-var tipuesearch_pages = ["https://alirumane.github.io","https://alirumane.github.io/blog"];
+var tipuesearch_pages = ["https://alirumane.github.io", "https://alirumane.github.io/blog", "https://alirumane.github.io/search.json"];
 
 
 /*
