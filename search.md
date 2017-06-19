@@ -20,5 +20,5 @@ header: Blog
 		</div>
 	</form>
 </div>
-
+<br>
 <div id="tipue_search_content"></div>
