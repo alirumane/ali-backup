@@ -3,6 +3,8 @@ layout: search
 title: Search
 permalink: /search/
 ---
+{% include JB/setup %}
+
 <h1>Search Page</h1>
 
 <form action="search.html">
