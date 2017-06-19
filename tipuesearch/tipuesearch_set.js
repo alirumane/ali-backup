@@ -6,6 +6,10 @@ Tipue Search is released under the MIT License
 http://www.tipue.com/search
 */
 
+// List of pages for Live mode
+
+var tipuesearch_pages = ["https://alirumane.github.io","https://alirumane.github.io/blog"];
+
 
 /*
 Stop words
@@ -77,5 +81,3 @@ var tipuesearch_string_15 = 'Searches related to';
 // Timer for showTime
 
 var startTimer = new Date().getTime();
-
-var tipuesearch_pages = ["https://alirumane.github.io/search.json"];
