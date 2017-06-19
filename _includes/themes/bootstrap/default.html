@@ -81,21 +81,7 @@
     {% include JB/analytics %}
     <script src="{{ ASSET_PATH }}/resources/jquery/jquery.min.js"></script>
     <script src="{{ ASSET_PATH }}/resources/bootstrap/js/bootstrap.min.js"></script>
-    <script src="{{ ASSET_PATH }}/js/style.js"></script>
-	
-    <script src="{{ ASSET_PATH }}/js/super-search.js"></script>
-    <script>superSearch({
- 	searchFile: '//alirumane.github.io/rss'
-      });</script>
-	
-	<script src="{{ ASSET_PATH }}/js/jekyll-search.min.js" type="text/javascript"></script>
-	<script>
-	JekyllSearch({
-	search-input: document.querySelector('.search-input'),
-	resultsContainer: document.getElementById('results-container'),
-	json: '/search.json',
-	searchResultTemplate: '<li><a href="{{ site.url }}{url}">{title}</a></li>'})
-	</script>
+    <script src="{{ ASSET_PATH }}/js/style.js"></script>	
 	  
 	  
 <script type="text/javascript" src="tipuesearch/tipuesearch_set.js"></script>
@@ -109,14 +95,12 @@ $(document).ready(function() {
 });
 </script>
 
-	  
-	  
-	      <script src="{{ ASSET_PATH }}/js/toc.js"></script>
-	  <script type="text/javascript">
-$(document).ready(function() {
-    $('#toc').toc();
-});
-</script>
+	<script src="{{ ASSET_PATH }}/js/toc.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+		$('#toc').toc();
+		});
+	</script>
 
   </body>
 </html>
