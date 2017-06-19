@@ -78,3 +78,4 @@ var tipuesearch_string_15 = 'Searches related to';
 
 var startTimer = new Date().getTime();
 
+var tipuesearch_pages = ["https://alirumane.github.io/search.json"];
