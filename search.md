@@ -15,14 +15,3 @@ header: Blog
 </div>
 </form>
 <div id="tipue_search_content"></div>
-
-<script type="text/javascript" src="tipuesearch/tipuesearch_set.js"></script>
-<script type="text/javascript" src="tipuesearch/tipuesearch_content.js"></script>
-<link rel="stylesheet" type="text/css" href="tipuesearch/css/tipuesearch.css">
-<script type="text/javascript" src="tipuesearch/tipuesearch.min.js"></script>
-
-<script>
-$(document).ready(function() {
-     $('#tipue_search_input').tipuesearch();
-});
-</script>
