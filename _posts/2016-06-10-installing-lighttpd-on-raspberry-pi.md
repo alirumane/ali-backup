@@ -7,6 +7,9 @@ excerpt: You want to run a webserver on Raspberry Pi
 ---
 >You want to run a webserver on Raspberry Pi
 
+* Do not remove this line (it will not be displayed)
+{:toc}
+
 [Lighttpd](http://www.lighttpd.net/) is an open-source web server optimized for speed-critical, high-performance environments while maintaining standards-compliant, secure and flexible.
 
  It has a very low memory footprint compared to other web servers and takes care of CPU-load.
