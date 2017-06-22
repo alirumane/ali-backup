@@ -22,15 +22,3 @@ header: Blog
 </div>
 <br>
 <div id="tipue_search_content"></div>
-
-
-
-
-<!-- Html Elements for Search -->
-<div id="search-container">
-<input type="text" id="search-input" placeholder="search...">
-<ul id="results-container"></ul>
-</div>
-
-<!-- Configuration -->
-
