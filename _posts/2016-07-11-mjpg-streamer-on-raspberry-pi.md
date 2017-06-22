@@ -8,7 +8,7 @@ excerpt: You want to stream video through Raspberry Pi
 ---
 >You want to stream video through Raspberry Pi
 
-* 
+* Do not remove this line (it will not be displayed)
 {:toc}
 
 ## A. Essentials
