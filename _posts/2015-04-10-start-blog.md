@@ -6,6 +6,9 @@ excerpt: Just started blog
 ---
 Recently I saw use and importance Git and came across GitHub, then found this wonderful thing called GitHub Page.
 
+* 
+{:toc}
+
 I have used WordPress and Umbraco before, they are CMS based and good for heavy weight websites - Faster development & Good built in SEO.
 
 For light weight comes GitHub Page!
