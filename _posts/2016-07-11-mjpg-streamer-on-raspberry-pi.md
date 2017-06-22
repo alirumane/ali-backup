@@ -6,7 +6,7 @@ category: Raspberry Pi Tutorials
 thumbnail : thumbs/mjpg-streamer-on-raspberry-pi.png
 excerpt: You want to stream video through Raspberry Pi
 ---
-<img width="300"   alt="{{page.title}}" title="{{page.title}}" itemprop="thumbnailUrl" src="/thumbs/{{post.thumbnail}}">
+![{{page.title}}](/thumbs/{{post.thumbnail}} "{{page.title}}"){: .center-image }*{{page.title}}*
 >You want to stream video through Raspberry Pi
 
 * Do not remove this line (it will not be displayed)
