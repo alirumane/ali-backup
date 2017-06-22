@@ -7,7 +7,7 @@ excerpt: You bought a Raspberry Pi and want to run an OS on it
 ---
 >You bought a Raspberry Pi and want to run an OS on it
 
-* 
+* Do not remove this line (it will not be displayed)
 {:toc}
 
 **N**ew **O**ut **O**f the **B**ox **S**oftware - an easy Operating System installer
