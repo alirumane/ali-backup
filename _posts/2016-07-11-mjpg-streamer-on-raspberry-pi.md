@@ -27,7 +27,7 @@ excerpt: You want to stream video through Raspberry Pi
   - Locate the camera port and connect the camera as shown.
   - Open the `Raspberry Pi Configuration` Tool from `Preferences` on the main menu
 
-![Raspberry Pi Camera Enable]({{site.url}}/images/raspi-camera-config.png "Raspberry Pi Camera Enable"){: .center-image }
+![Raspberry Pi Camera Enable](/images/raspi-camera-config.png "Raspberry Pi Camera Enable"){: .center-image }
 
   - Enable the `Camera` from `Interfaces` tab if Disabled and Reboot the Pi.
 
