@@ -7,6 +7,9 @@ excerpt: You bought a Raspberry Pi and want to run an OS on it
 ---
 >You bought a Raspberry Pi and want to run an OS on it
 
+* 
+{:toc}
+
 **N**ew **O**ut **O**f the **B**ox **S**oftware - an easy Operating System installer
 
 [Raspberrypi.org](https://www.raspberrypi.org/) suggests NOOBS OS installation. It has complete guide for installing the OS, still cut through...
