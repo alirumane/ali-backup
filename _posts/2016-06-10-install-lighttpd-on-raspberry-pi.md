@@ -1,8 +1,9 @@
 ---
 layout: post
-title: Installing LIGHTTPD web server on Raspberry Pi
+title: Install LIGHTTPD web server on Raspberry Pi
 tags: [Raspberry Pi, lighttpd, server]
 category: Raspberry Pi Tutorials
+thumbnail : thumbs/install-lighttpd-on-raspberry-pi.png
 description: You want to run a webserver on Raspberry Pi
 ---
 >You want to run a webserver on Raspberry Pi
