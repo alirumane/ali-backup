@@ -7,7 +7,7 @@ thumbnail: /thumbs/mjpg-streamer-on-raspberry-pi.png
 description: You want to stream video through Raspberry Pi
 ---
 
-<img width="100%" src="{{ page.thumbnail }}" alt="{{page.title}}">
+<img src="{{ page.thumbnail }}" alt="{{page.title}}">
 >You want to stream video through Raspberry Pi
 
 * Do not remove this line (it will not be displayed)
