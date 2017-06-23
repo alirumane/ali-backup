@@ -3,9 +3,10 @@ layout: post
 title: Installing NOOBS OS on Raspberry Pi
 tags: [Raspberry Pi, NOOBS]
 category: Raspberry Pi Tutorials
-thumbnail: thumbs/installing-noobs-os-on-raspberry-pi.png
+thumbnail: /thumbs/installing-noobs-os-on-raspberry-pi.png
 description: You bought a Raspberry Pi and want to run an OS on it
 ---
+<img src="{{ page.thumbnail }}" alt="{{page.title}}">
 >You bought a Raspberry Pi and want to run an OS on it
 
 * Do not remove this line (it will not be displayed)
