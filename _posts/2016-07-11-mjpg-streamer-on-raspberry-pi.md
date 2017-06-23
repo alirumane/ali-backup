@@ -8,6 +8,7 @@ description: You want to stream video through Raspberry Pi
 ---
 
 <img src="{{ page.thumbnail }}" alt="{{page.title}}">
+
 <i class="fa fa-quote-left fa-3x fa-pull-left fa-border"></i>{{page.description}}
 {: .container .row }
 
