@@ -4,7 +4,7 @@ title: Installing MJPG Streamer on Raspberry Pi
 tags: [Raspberry Pi, MJPG Streamer, Video]
 category: Raspberry Pi Tutorials
 thumbnail: /thumbs/mjpg-streamer-on-raspberry-pi.png
-description: You want to stream video through Raspberry Pi You want to stream video through Raspberry Pi You want to stream video through Raspberry Pi You want to stream video through Raspberry Pi You want to stream video through Raspberry Pi
+description: You want to stream video through Raspberry Pi
 ---
 <div class="row">
 <div class="col-md-10">
