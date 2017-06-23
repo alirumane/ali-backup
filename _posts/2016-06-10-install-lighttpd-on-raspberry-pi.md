@@ -6,6 +6,7 @@ category: Raspberry Pi Tutorials
 thumbnail : /thumbs/install-lighttpd-on-raspberry-pi.png
 description: You want to run a webserver on Raspberry Pi
 ---
+<img src="{{ page.thumbnail }}" alt="{{page.title}}">
 >You want to run a webserver on Raspberry Pi
 
 * Do not remove this line (it will not be displayed)
