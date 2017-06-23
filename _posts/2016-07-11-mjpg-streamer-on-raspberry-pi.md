@@ -7,9 +7,11 @@ thumbnail: /thumbs/mjpg-streamer-on-raspberry-pi.png
 description: You want to stream video through Raspberry Pi
 ---
 <div class="row">
+<div class="intro col-md-12">
 <img src="{{ page.thumbnail }}" alt="{{page.title}}">
-<i class="fa fa-quote-left fa-3x fa-pull-left fa-border"></i>{{page.description}}
-{: .intro}
+<i class="fa fa-quote-left fa-2x fa-pull-left fa-border"></i>
+<p>{{page.description}}</p>
+</div>
 </div>
 
 >You want to stream video through Raspberry Pi
