@@ -8,7 +8,7 @@ description: You want to stream video through Raspberry Pi
 ---
 {: .container .row }
 <img src="{{ page.thumbnail }}" alt="{{page.title}}">
-## {{page.description}}
+##{{page.description}}
 
 
 >You want to stream video through Raspberry Pi
