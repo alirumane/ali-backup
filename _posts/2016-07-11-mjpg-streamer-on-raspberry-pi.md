@@ -109,7 +109,8 @@ You can change the above parameters
 |     -y    	|  height/y-axis  	| height of frame capture, default 480 	|
 |     -p    	|    HTTP port    	|     TCP port for this HTTP server    	|
 |     -w    	| web page folder 	|     folder that contains webpages    	|
-  You will see something like this
+  
+You will see something like this
 
 ```
 MJPG Streamer Version.: 2.0
