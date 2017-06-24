@@ -97,7 +97,18 @@ sudo rm -rf ~/mjpg-streamer
  LD_LIBRARY_PATH=/opt/mjpg-streamer/ /opt/mjpg-streamer/mjpg_streamer -i "input_raspicam.so -fps 15 -q 50 -x 640 -y 480" -o "output_http.so -p 9000 -w /opt/mjpg-streamer/www"
  ```
 
+You can change the above parameters
 
+| Parameter 	|      Point      	|                Details               	|
+|:---------:	|:---------------:	|:------------------------------------:	|
+|     -i    	|      input      	|           input parameters           	|
+|     -o    	|      output     	|           output parameters          	|
+|    -fps   	|    framerate    	| video framerate, default 5 frame/sec 	|
+|     -q    	|     quality     	|  set JPEG quality 0-100, default 85  	|
+|     -x    	|   width/x-axis  	|  width of frame capture, default 640 	|
+|     -y    	|  height/y-axis  	| height of frame capture, default 480 	|
+|     -p    	|    HTTP port    	|     TCP port for this HTTP server    	|
+|     -w    	| web page folder 	|     folder that contains webpages    	|
   You will see something like this
 
 ```
