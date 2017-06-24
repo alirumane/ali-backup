@@ -4,8 +4,7 @@ title: Installing MJPG Streamer on Raspberry Pi
 tags: [Raspberry Pi, MJPG Streamer, Video]
 category: Raspberry Pi Tutorials
 thumbnail: /thumbs/mjpg-streamer-on-raspberry-pi.png
-description: Motion JPG is a video compression format in which each video frame or video sequence is compressed separately as a JPEG image. MJPG-streamer takes JPGs from compatible cameras or other input plugins and streams them as M-JPEG via HTTP to web browsers/servers and other media players.
-
+description: Streaming video output on webserver or media player through camera connected on Raspberry Pi can be used for many applications. You can stream video from Raspberry Pi Camera to Web Browsers, even on Android, IOS and Windows!
 ---
 <div class="row">
 <div class="col-md-10">
@@ -17,7 +16,7 @@ description: Motion JPG is a video compression format in which each video frame 
 </div>
 </div>
 
->You want to stream video through Raspberry Pi
+Motion JPG is a video compression format in which each video frame or video sequence is compressed separately as a JPEG image. MJPG-streamer takes JPGs from compatible cameras or other input plugins and streams them as M-JPEG via HTTP to web browsers and other media players.
 
 * Do not remove this line (it will not be displayed)
 {:toc}
@@ -42,16 +41,13 @@ Requirements:
   - Enable the `Camera` from `Interfaces` tab if Disabled and Reboot the Pi.
 
 
-## C. Installing MJPG Streamer
-
+## C. Installing Dependencies
 
   Install dev version of libjpeg:
-
 
 ```
 sudo apt-get install libjpeg62-turbo-dev
 ```
-
 
   Install make:
 
@@ -59,32 +55,28 @@ sudo apt-get install libjpeg62-turbo-dev
  sudo apt-get install cmake
 ```
 
+## D. Installing MJPG Streamer
 
   Download mjpg-streamer with raspicam plugin:
-
 
 ```
 git clone https://github.com/jacksonliam/mjpg-streamer.git ~/mjpg-streamer
 ```
-
 
   Change directory:
 
 
 ```
  cd ~/mjpg-streamer/mjpg-streamer-experimental
- ```
-
+```
 
   Compile:
-
 
 ```
  make clean all
 ```
 
   Replace old jpg-streamer:
-
 
 ```
  sudo rm -rf /opt/mjpg-streamer
@@ -95,7 +87,7 @@ sudo rm -rf ~/mjpg-streamer
 ```
 
 
-## D. Start Streaming
+## E. Start Streaming
 
 
   To Begin streaming type:
@@ -103,7 +95,7 @@ sudo rm -rf ~/mjpg-streamer
 
 ```
  LD_LIBRARY_PATH=/opt/mjpg-streamer/ /opt/mjpg-streamer/mjpg_streamer -i "input_raspicam.so -fps 15 -q 50 -x 640 -y 480" -o "output_http.so -p 9000 -w /opt/mjpg-streamer/www"
-```
+ ```
 
 
   You will see something like this
@@ -141,22 +133,20 @@ Starting Camera
 
 Encoder Buffer Size 81920
 ```
-  Now type the following url in your browser
+  Now type the this url in your browser `http://localhost:9000/stream.html` to view the streamed output locally or type the IP address of Raspberry Pi with port like `http://<IP-address>:9000/stream.html` to watch from another computer/device in your network.
 
-  To find IP address type
+  To find IP address enter:
 
 ```
 sudo ifconfig
 ```
 
   It will be something like this `192.168.43.100`
-IpAddress:9000/stream.html
-```
 
-## E. Stop Streaming
-
+## F. Stop Streaming
 
   To stop streaming type:
+  
 ```
 kill -9 'pidof mjpg_streamer'
 ```
