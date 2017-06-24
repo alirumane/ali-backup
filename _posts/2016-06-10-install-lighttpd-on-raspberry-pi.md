@@ -4,18 +4,29 @@ title: Install LIGHTTPD web server on Raspberry Pi
 tags: [Raspberry Pi, lighttpd, server]
 category: Raspberry Pi Tutorials
 thumbnail : /thumbs/install-lighttpd-on-raspberry-pi.png
-description: You want to run a webserver on Raspberry Pi
+description: Lighttpd is a webserver optimized for speed and reduced CPU-load. It provides setting up a web server without loading the limited processing capability which is ideal for providing web access to the Raspberry Pi as a monitoring tool, or as a lightweight webserver for a personal use.
 ---
+<div class="row">
+<div class="col-md-10">
+<div class="intro">
 <img src="{{ page.thumbnail }}" alt="{{page.title}}">
->You want to run a webserver on Raspberry Pi
+<i class="fa fa-quote-left fa-2x fa-pull-left fa-border"></i>
+<p>{{page.description}}</p>
+</div>
+</div>
+</div>
+
+[Lighttpd](http://www.lighttpd.net/) is an open-source web server optimized for speed-critical, high-performance environments while maintaining standards-compliant, secure and flexible.
+
+It has a very low memory footprint compared to other web servers and takes care of CPU-load.
+Running a light webserver on Linux with Lighttpd and Raspberry Pi:
 
 * Do not remove this line (it will not be displayed)
 {:toc}
 
-[Lighttpd](http://www.lighttpd.net/) is an open-source web server optimized for speed-critical, high-performance environments while maintaining standards-compliant, secure and flexible.
+## A. General
 
- It has a very low memory footprint compared to other web servers and takes care of CPU-load.
-
+Overview and comparison of Memory Usage and Connection Requests.
 
 #### Memory Usage
 
@@ -33,22 +44,24 @@ description: You want to run a webserver on Raspberry Pi
 Also the requests per second for Lighttpd is suitable for  applications running on Raspberry Pi.
 
 
-## A. Setting up
+## B. Setting up
 
 #### 1. Installing lighttpd
 
 To install the lighttpd web server type the following commands in terminal
 
 
-```shell
+```
 sudo apt-get install lighttpd
 ```
 
+This will install the web server and other required dependencies.
 
 #### 2. Enabling CGI
 
+CGI and FastCGI are not necessary though.
 
-```sh
+```
 sudo lighttpd-enable-mod cgi
 ```
 
@@ -61,7 +74,7 @@ sudo lighttpd-enable-mod fastcgi
 ```
 
 
-## B. Configuring Server
+## C. Configuring Server
 
 
 You need to change the default location of html in web-directory.  Type the following command in terminal
@@ -98,7 +111,7 @@ to
  ```
 
 
-## C. Restarting Server
+## D. Restarting Server
 
 
 You can restart the server with any two commands below
@@ -125,18 +138,36 @@ sudo /etc/init.d/lighttpd start
 ```
 
 
-## D. Set permissions on the web directory
+## E. Set permissions on the web directory
 
-Change the permissions on the `www` directory to allow your user to update the webpages without needing them to be root.
+Change the permissions on the `www` directory to allow user to update the webpages without needing to be root.
 
 
- To allow the group to write to the directory type the following in terminal
 
+
+Change the directory owner and group
+
+```
+ sudo chown www-data:www-data /var/www
+```
+
+To allow the group to write to the directory type the following in terminal
 
 ```
  sudo chmod 775 /var/www
 ```
 
- > It is necessary to logout current user and login again to make the changes. It is better to `restart` the Raspberry Pi to set the permissions.
+ To add the pi user to the www-data group
 
- You have successfully installed and configured lighttpd web server on Raspberry Pi!
+```
+ sudo usermod -a -G www-data pi
+```
+
+ > It is necessary to logout current user and login again to make the group permissions.
+ It is better to `restart` the Raspberry Pi to set the permissions.
+
+## E. Testing the server
+
+Once the setup is complete you can access the web page by typing the IP address of the Raspberry Pi in web browser.
+
+ You have successfully installed and configured Lighttpd web server on Raspberry Pi!
