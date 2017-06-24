@@ -28,6 +28,9 @@
   margin-bottom: 20px;
   font-weight: bold; }
 
+.post-full .p{
+  font-size: 16px; }
+
 /* tag_box */
 .tag_box {
   list-style: none;
