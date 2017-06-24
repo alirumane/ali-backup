@@ -4,7 +4,8 @@ title: Installing MJPG Streamer on Raspberry Pi
 tags: [Raspberry Pi, MJPG Streamer, Video]
 category: Raspberry Pi Tutorials
 thumbnail: /thumbs/mjpg-streamer-on-raspberry-pi.png
-description: You want to stream video through Raspberry Pi
+description: Motion JPG is a video compression format in which each video frame or video sequence is compressed separately as a JPEG image. MJPG-streamer takes JPGs from compatible cameras or other input plugins and streams them as M-JPEG via HTTP to web browsers/servers and other software media players.
+
 ---
 <div class="row">
 <div class="col-md-10">
