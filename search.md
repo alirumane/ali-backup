@@ -8,7 +8,7 @@ header: Blog
 <h2>Search Page</h2>
 
 <div class="col-xs-6">
-	<form class="form-search" role="search" action="search.html">
+	<form class="form-search" role="search" action="/search.html">
 		<div class="input-group add-on">
 				<input class="form-control" placeholder="Search" name="q" id="tipue_search_input" type="text" pattern=".{3,}" title="At least 3 characters" required>
 					<span class="input-group-btn">
