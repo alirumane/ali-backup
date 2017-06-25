@@ -53,16 +53,20 @@
             {% assign group = 'navigation' %}
             {% include JB/pages_list %}
           </ul>
-		  	<form class="navbar-form navbar-right" role="search" action="search.html">
-				<div class="input-group">
-					<input class="form-control" placeholder="Search" name="q" id="tipue_search_input" type="text" pattern=".{3,}" title="At least 3 characters" required>
-					<div class="input-group-btn">
-						<button class="btn btn-default" type="button">
-							<span class="glyphicon glyphicon-search"></span>
-						</button>
-					</div>
+		<ul class="nav navbar-nav navbar-right">
+        	<li>
+		<form class="navbar-form" role="search" action="search.html">
+			<div class="input-group">
+				<input class="form-control" placeholder="Search" name="q" id="tipue_search_input" type="text" pattern=".{3,}" title="At least 3 characters" required>
+				<div class="input-group-btn">
+					<button class="btn btn-default" type="button">
+						<span class="glyphicon glyphicon-search"></span>
+					</button>
 				</div>
-			</form>
+			</div>
+		</form>
+		</li>
+		</ul>
         </div>
 	  </div>
     </div>
