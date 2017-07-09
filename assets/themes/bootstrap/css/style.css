@@ -93,7 +93,7 @@ body {
 
 // Adding 'Contents' headline to the TOC
 #markdown-toc::before {
-    content: "Contents";
+    content: Contents;
     font-weight: bold;
     line-height:1.8;
 }
