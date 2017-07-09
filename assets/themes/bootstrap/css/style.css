@@ -103,6 +103,11 @@ body {
     padding: 1.5em;
     display: inline-block;
 }
+#markdown-toc a {
+    text-decoration: none;
+    border: none;
+    color: cornflowerblue
+}
 
 .intro {
     font-size: 1.5em;
