@@ -9,11 +9,13 @@ description: Streaming video output on webserver or media player through camera 
 <div class="row">
 <div class="paragraphs">
   <div class="row">
+   <div class="intro">
     <div class="span4">
-      <div class="clearfix intro">
+      <div class="clearfix">
 			<img class="pull-left" src="{{ page.thumbnail }}" alt="{{page.title}}">
 			<i class="fa fa-quote-left fa-2x fa-pull-left fa-border"></i>
 			<p>{{page.description}}</p>
+      </div>
       </div>
     </div>
   </div>
