@@ -89,7 +89,8 @@
 	<script>
       		$("div.navbar-fixed-top").autoHidingNavbar();
     	</script>
-	  
+
+{% if page.title =="Search" %}
 <script type="text/javascript" src="/tipuesearch/tipuesearch_set.js"></script>
 <script type="text/javascript" src="/tipuesearch/tipuesearch_content.js"></script>
 <link rel="stylesheet" type="text/css" href="/tipuesearch/css/tipuesearch.css">
@@ -99,6 +100,7 @@
 		$('#tipue_search_input').tipuesearch();
 		});
 	</script>
-
+{% endif %}
+	  
   </body>
 </html>
