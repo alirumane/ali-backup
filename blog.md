@@ -5,8 +5,9 @@ header: Blog
 group: navigation
 ---
 {% include JB/setup %}
-<div class="col-md-8">
+
 <div class="row">
+<div class="col-md-8">
 {% for post in site.posts %}
 <div class="panel">
     <div class="panel-body">
