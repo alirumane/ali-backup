@@ -6,105 +6,44 @@ header : 404 Error
 {% include JB/setup %}
 
 <style>
-html, body {
-  height: 100%;
-}
-body {
-  margin: auto;
-  width: 1008px;
-  background-color: #D4D9DD;
-  font-family: Verdana, Arial, sans-serif;
-}
-a {
-  text-decoration: none;
-}
-a:hover {
-  text-decoration: underline;
-}
-a:link, a:hover, a:visited {
-  color: #136CB2;
-}
-a:active {
-  color: #23ffb3;
-}
-#error {
-  height: 100%;
-  background-color: white;
-  border-left: 1px solid #999999;
-  border-right: 1px solid #999999;
-  box-shadow: 0 0 5px 5px #C5CACD;
-}
-.error_message {
-  color: #999999;
-  font-size: 17.5px;
-  padding: 30px 70px 20px;
-}
-.error_bubble {
-  font-family: Arial, helvetica, sans-serif;
-  font-weight: bold;
-  border-radius: 8px;
-  -moz-border-radius: 8px;
-  margin: 0 70px 0 70px;
-  padding: 50px;
-}
-.error_bubble div {
-  display: inline-block;
-  vertical-align: middle;
-}
-.error_quote {
-  color: #FFFFFF;
-  font-size: 30px;
-  line-height: 1.35em;
-  padding-left: 50px;
-  width: 500px;
-}
-.error_code {
-  font-size: 100px;
-  line-height: 50px;
-  margin-top:8px
-}
-.error_arrow {
-  border-color: #16deca transparent transparent transparent;
-  border-style: solid;
-  border-width: 21px 0px 0px 32px;
-  height: 0;
-  left: 700px;
-  line-height: 0;
-  position: relative;
-  top: -1px;
-  width: 0;
-}
-.error_code > span {
-  font-size: 50px;
-}
-.error_attrib {
-  color: #999999;
-  float: right;
-  font-size: 14px;
-  font-style: italic;
-  padding: 10px 70px 36px;
-}
-.error_code_404 .error_bubble {
-  background: none repeat scroll 0% 0% #16deca;
-  border: 1px solid #16deca;
-}
-.error_code_404 .error_code {
-  color: #0a6158;
-}
-.clear {
-  clear: both;
-}
+.error-template {padding: 40px 15px;text-align: center;}
+.error-actions {margin-top:15px;margin-bottom:15px;}
+.error-actions .btn { margin-right:10px; }
 </style>
-<div id="error" class="error_code_404">
-    <div class="error_message">
-        The requested URL was not found. <a href="/">Go to the homepage</a> &raquo;
-    </div>
-    <div class="error_bubble">
-        <div class="error_code">404<br><span>ERROR</span></div>
-        <div class="error_quote">Not until we are lost do we begin to understand ourselves.</div>
-    </div>
-    <div class="error_arrow"></div>
-    <div class="error_attrib">        <span>Henry David Thoreau </span>        <a href="https://en.wikipedia.org/wiki/Henry_David_Thoreau">Philosopher</a>
-    </div>
-    <div class="clear"></div>
-</div>
+	<div class="row">
+        <div class="col-md-12">
+		<div class="error-template">
+			<h1>404 Error!</h1>
+			    <i class="fa fa-exclamation-triangle fa-5x" aria-hidden="true"></i>
+			    <div class="error-details">
+                    Sorry, an error has occured, Requested page not found!
+                </div>	
+		</div>
+		</div>
+	</div>
+
+		<div class="row-fluid">
+		
+		<div class="span4">
+		<div class="error-actions">
+		<p>Try searching...</p>
+				<form class="form" role="search" action="/search.html">
+			<div class="input-group">
+				<input class="form-control" placeholder="Search" name="q" id="tipue_search_input" type="text" pattern=".{3,}" title="At least 3 characters" required>
+				<div class="input-group-btn">
+					<button class="btn btn-default" type="button">
+						<span class="glyphicon glyphicon-search"></span>
+					</button>
+				</div>
+			</div>
+		</form>
+		</div>
+		</div>
+		
+		<div class="span4">
+		<div class="error-actions">
+		<a href="/" class="btn btn-default btn-lg"><span class="glyphicon glyphicon-home"></span> Go to HomePage </a>
+		</div>
+		</div>
+		
+		</div>
