@@ -50,5 +50,3 @@ group: navigation
 	</div>
 </div>
 </div>
-
-{% include JB/tags_list %}
