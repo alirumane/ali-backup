@@ -5,7 +5,8 @@ header: Blog
 group: navigation
 ---
 {% include JB/setup %}
-
+<div class="col-md-8">
+<div class="row">
 {% for post in site.posts %}
 <div class="panel">
     <div class="panel-body">
@@ -30,5 +31,24 @@ group: navigation
 	</div>
 </div>
 {% endfor %}
+
+</div>
+<div class="col-md-4">
+	<div class="well">
+		<h3> <i class="fa fa-tags" aria-hidden="true"></i> Tags</h3>
+		<ul>
+		{% assign tags_list = site.tags %}  
+		{% include JB/tags_list %}
+		</ul>
+	</div>
+	<div class="well">
+		<h3> <i class="fa fa-folder-open" aria-hidden="true"></i> Categories</h3>
+		 <ul>
+		{% assign categories_list = site.categories %}
+		{% include JB/categories_list %}
+		</ul>
+	</div>
+</div>
+</div>
 
 {% include JB/tags_list %}
